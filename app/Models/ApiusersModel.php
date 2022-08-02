@@ -6,7 +6,7 @@ use CodeIgniter\Model;
 
 class ApiusersModel extends Model
 {
-    protected $DBGroup = 'project';
+    protected $DBGroup = 'api2';
     protected $table = 'api_users';
     protected $primaryKey = 'id_user';
 }

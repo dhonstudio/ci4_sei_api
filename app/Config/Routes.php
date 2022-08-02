@@ -37,22 +37,7 @@ $routes->set404Override();
 // route since we don't have to scan directories.
 $routes->post('/gethit', 'GetHit::index');
 
-$routes->get('/landingpagecontent/getAllByKey', 'LandingPageContent::getAllByKey');
-$routes->get('/landingpagecontent/getAll', 'LandingPageContent::getAll');
-$routes->post('/landingpagecontent/edit', 'LandingPageContent::edit');
-
-$routes->get('/landingpageweb/getAllByUser', 'LandingPageWeb::getAllByUser');
-$routes->get('/landingpageweb/getByKey', 'LandingPageWeb::getByKey');
-$routes->post('/landingpageweb/insert', 'LandingPageWeb::insert');
-
-$routes->get('/users/getAllUsers', 'Users::getAllUsers');
-$routes->get('/users/getUserByEmail', 'Users::getUserByEmail');
-$routes->post('/users/insert', 'Users::insert');
-$routes->get('/users/passwordVerify', 'Users::passwordVerify');
-
-$routes->get('/webadmin/getUserByUsername', 'WebAdmin::getUserByUsername');
-$routes->get('/webadmin/getUserById', 'WebAdmin::getUserById');
-$routes->post('/webadmin/insert', 'WebAdmin::insert');
+$routes->get('/testimonial/getall', 'Testimonial::getAll');
 
 /*
  * --------------------------------------------------------------------

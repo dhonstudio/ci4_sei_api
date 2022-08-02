@@ -6,7 +6,7 @@ use CodeIgniter\Model;
 
 class AddressModel extends Model
 {
-    protected $DBGroup = 'project';
+    protected $DBGroup = 'hit';
     protected $table = 'dhonstudio_address';
     protected $primaryKey = 'id_address';
     protected $allowedFields = ['ip_address', 'ip_info'];

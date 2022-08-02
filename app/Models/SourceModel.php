@@ -6,7 +6,7 @@ use CodeIgniter\Model;
 
 class SourceModel extends Model
 {
-    protected $DBGroup = 'project';
+    protected $DBGroup = 'hit';
     protected $table = 'dhonstudio_source';
     protected $primaryKey = 'id_source';
     protected $allowedFields = ['source'];

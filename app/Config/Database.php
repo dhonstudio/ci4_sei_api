@@ -23,7 +23,7 @@ class Database extends Config
      *
      * @var string
      */
-    public $defaultGroup = 'project';
+    public $defaultGroup = 'api2';
 
     /**
      * The default database connection.
@@ -77,7 +77,9 @@ class Database extends Config
         'foreignKeys' => true,
     ];
 
-    public $project;
+    public $api2;
+    public $hit;
+    public $content;
 
     public function __construct()
     {
@@ -91,7 +93,7 @@ class Database extends Config
         }
 
         $this->default['username'] = 'root';
-        $this->project = $this->default;
+        $this->api2 = $this->hit = $this->content = $this->default;
 
         ENVIRONMENT === 'development' ? require 'DatabaseLocal.php'
             : (ENVIRONMENT === 'testing' ? require 'DatabaseDev.php'

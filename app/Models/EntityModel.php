@@ -6,7 +6,7 @@ use CodeIgniter\Model;
 
 class EntityModel extends Model
 {
-    protected $DBGroup = 'project';
+    protected $DBGroup = 'hit';
     protected $table = 'dhonstudio_entity';
     protected $allowedFields = ['entity'];
     protected $validationRules = [
