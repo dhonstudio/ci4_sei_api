@@ -38,6 +38,7 @@ $routes->set404Override();
 $routes->post('/gethit', 'GetHit::index');
 
 $routes->get('/testimonial/getall', 'Testimonial::getAll');
+$routes->get('/testimonial_en/getall', 'Testimonial::getAllEn');
 
 /*
  * --------------------------------------------------------------------

@@ -2,6 +2,7 @@
 
 namespace App\Controllers;
 
+use App\Models\TestimonialsEnModel;
 use App\Models\TestimonialsModel;
 use CodeIgniter\HTTP\RequestInterface;
 use CodeIgniter\HTTP\ResponseInterface;
@@ -17,6 +18,12 @@ class Testimonial extends BaseController
     public function getAll()
     {
         $this->dhonresponse->model = new TestimonialsModel();
+        $this->dhonresponse->collect();
+    }
+
+    public function getAllEn()
+    {
+        $this->dhonresponse->model = new TestimonialsEnModel();
         $this->dhonresponse->collect();
     }
 }
